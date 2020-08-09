@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Work+Sans:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-nav {
+    color: white;
+    background-color: rgb(47, 49, 49);
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navbar {
+    width: 900px;
+    /* border: 1px solid black;
+    for debug*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #1c73ff;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+
+}
