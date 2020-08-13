@@ -68,11 +68,9 @@
 }
 
 /* ! header */
-.header__container {
+.container__header {
   color: white;
-  /* !
   background-color: #151515;
-  */
   background-image: url("images/peak.jpg");
   background-size: cover;
   background-attachment: fixed;
