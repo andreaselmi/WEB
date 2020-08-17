@@ -5,17 +5,25 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+html, body, header {
+  height: 100%;
+}
+
+.container {
+  background: #151515 url("images/peak.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
 /* ! navbar */
 .container__nav {
-  color: black;
-  background-color: white;
-  padding: 20px 10px;
+  background-color: none;
   display: flex;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .navbar {
-  padding: 0 20px;
+  padding: 10px 20px;
   width: 900px;
   display: flex;
   justify-content: space-between;
@@ -23,12 +31,9 @@
 }
 
 .logo a {
+  color: black;
   text-decoration: none;
   font-weight: bold;
-}
-
-.logo {
-  padding-bottom: 5px;
 }
 
 .menu {
@@ -48,8 +53,10 @@
 }
 
 .logo a:link,
+.nav__link:link,
+.nav__link:visited,
 .logo a:visited {
-  color: black;
+  color: white;
 }
 
 .nav__link:hover,
@@ -57,25 +64,10 @@
   color: #49C3B5;
 }
 
-.link__contact:hover {
-  color: white;
-}
-
-.item__contact {
-  border: 2px solid #49C3B5;
-  background-color: #49C3B5;
-  border-radius: 20px;
-}
-
 /* ! header */
 .container__header {
   color: white;
-  background-color: #151515;
-  background-image: url("images/peak.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  height: 700px;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -95,6 +87,7 @@
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  text-shadow: -5px 5px 10px black;
 }
 
 .name {
@@ -124,7 +117,6 @@
 /* ! social */
 .social__list {
   list-style-type: none;
-  color: red;
 }
 
 .social__icon {
@@ -164,8 +156,10 @@
 }
 
 /* ! smartphone */
-@media screen and (max-width:400px) {
+@media screen and (max-width:1024px) {
   .header {
+    padding-top: 15%;
+    height: 90vh;
     flex-flow: column;
     align-items: flex-start;
   }
