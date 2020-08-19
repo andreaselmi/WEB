@@ -109,7 +109,7 @@ body {
   color: #2CB75F;
 }
 
-/* ! social */
+/* ! social icon */
 .social__list {
   list-style-type: none;
 }
@@ -143,10 +143,31 @@ body {
 .main__container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* ! biography */
-.biography {
+/* ! section title */
+.biography__title,
+.latest__work__title,
+.contact__form__title {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding-top: 20px;
+}
+
+.biography__title h1,
+.latest__work__title h1,
+.contact__form__title h1 {
+  margin: 0 auto 10px;
+  width: 35vw;
+  border-bottom: 5px solid #3EF27E;
+}
+
+/* ! section body */
+.biography,
+.latest__work,
+.contact__form__section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -154,39 +175,13 @@ body {
   padding: 20px;
 }
 
-.biography__intro {
-  width: 100%;
-  text-align: center;
-  display: block;
-  padding-top: 20px;
-}
-
-.biography__intro h1 {
-  margin: 0 auto 10px;
-  width: 35vw;
-  border-bottom: 5px solid #3EF27E;
-}
-
-.biography__intro p {
+/* ! biography */
+.biography__title p {
   width: 50%;
   margin: 0 auto;
 }
 
-.biography__container__img {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  flex: 1;
-}
-
-.biography__img {
-  width: 200px;
-  border-radius: 5%;
-  box-shadow: -2px 2px 15px black;
-  /*box-shadow: -5px 5px 10px #3EF27E;
-  border: 3px solid black;*/
-}
-
+/* ! skills */
 .biography__skills {
   display: flex;
   width: 100%;
@@ -195,13 +190,29 @@ body {
   align-items: center;
 }
 
+/* ! myimg */
+.biography__container__img {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+
+.biography__img {
+  width: 200px;
+  height: 250px;
+  border-radius: 5%;
+  box-shadow: -2px 2px 15px black;
+}
+
+/* ! hard skills */
 .skills__hard {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  flex: 1;
+  flex: 3;
 }
 
 .skills__hard h4 {
@@ -240,8 +251,9 @@ body {
   border-radius: 9px;
 }
 
+/* ! soft skills */
 .skills__soft {
-  flex: 1;
+  flex: 3;
   width: 300px;
 }
 
@@ -264,21 +276,122 @@ body {
   display: inline;
 }
 
+/* ! work section */
+.latest__work__img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.work {
+  display: flex;
+  width: 600px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.work p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.work figure {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(62, 242, 126, 0.5);
+}
+
+/* ! contact form */
+.contact__form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 900px;
+  padding: 50px;
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form__item {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form__item input[type="text"],
+.form__item input[type="email"],
+.form__item input[type="tel"],
+.form__item textarea {
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+.form__item button {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #5995DA;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form__item button:hover {
+  background-color: #76AEED;
+}
+
+.form__item button:active {
+  background-color: #407FC7;
+}
+
 /* ! footer */
 .footer {
   display: flex;
-  margin-top: 500px;
-  height: 25px;
-  background-color: #0E0E0E;
+  margin-top: 30px;
+  padding: 20px;
+  background-image: url("images/blue.jpg");
   justify-content: center;
 }
 
 .footer__element {
   width: 900px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: bold;
 }
 
-.footer__copy {
+.footer__link a {
+  text-decoration: none;
+}
+
+.footer__link a:link,
+.footer__link a:visited {
   color: white;
+}
+
+.footer__link a:hover {
+  color: #3EF27E;
 }
 
 /* ! tablet */
@@ -328,6 +441,19 @@ body {
   .skills__soft h4 {
     text-align: right;
   }
+
+  .latest__work__img {
+    padding: 0;
+  }
+
+  .work {
+    width: 90%;
+  }
+
+  .contact__form {
+    width: 90%;
+    padding: 15px;
+  }
 }
 
 /* ! smartphone */
@@ -342,9 +468,6 @@ body {
 
   .header {
     height: 100%;
-    padding-top: 20px;
-    flex-flow: column;
-    align-items: flex-start;
   }
 
   .hello {
@@ -360,39 +483,8 @@ body {
     margin-bottom: 30px;
   }
 
-  .social__icon:not(#first) {
-    padding-left: 50px;
-  }
-
-  .biography__intro p {
+  .biography__title p {
     width: 100%;
-  }
-
-  .biography,
-  .biography__skills {
-    flex-direction: column;
-  }
-
-  .skills__hard {
-    order: 2;
-    margin-bottom: 20px;
-  }
-
-  .skills__hard h4 {
-    position: static;
-  }
-
-  .biography__container__img {
-    order: 1;
-    margin: 20px 0 20px;
-  }
-
-  .skills__soft {
-    order: 3;
-  }
-
-  .skills__soft h4 {
-    text-align: right;
   }
 }
 

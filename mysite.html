@@ -11,14 +11,14 @@
 </head>
 
 <body>
-  <header class="container">
+  <header class="container"><a name="home"></a>
     <div class="container__nav">
       <nav class="navbar">
         <ul class="menu">
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#" class="nav__link" id="last">Contact</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -31,7 +31,7 @@
             </h6>
           </div>
           <div class="minibio">
-            <h1>Web Developer <br> Gamer <br>
+            <h1>Web Developer <br> Dreamer <br>
               FoodLover</h1>
           </div>
           <div> <a href="#about" class="about">Learn more</a></div>
@@ -53,14 +53,14 @@
   </header>
   <main class="main__container">
     <section class="biography"><a name="about"></a>
-      <div class="biography__intro">
+      <div class="biography__title">
         <h1>ABOUT ME</h1>
         <p>Sono un aspirante Web Developer italiano, ho 29 anni e vivo a Lecce.
           Da sempre con la passione per la programmazione lavoro come impiegato amministrativo contabile nella mia città.
           Nel tempo libero leggo di tecnologia, cucino buon cibo (non sempre) e gioco ai video games.
         </p>
       </div>
-      <div class="biography__skills">
+      <div class="biography__skills"><a name="skills"></a>
         <div class="skills__hard">
           <h4>HARD SKILLS</h4>
           <div> HTML
@@ -92,7 +92,7 @@
               Organizzazione
             </li>
             <li class="skills__item"><i class="fas fa-dumbbell skills__icon"></i>
-              Intrapendenza
+              Intraprendenza
             </li>
             <li class="skills__item"><i class="fas fa-brain skills__icon"></i>
               Problem solving
@@ -101,11 +101,78 @@
         </div>
       </div>
     </section>
+    <section class="latest__work"><a name="works"></a>
+      <div class="latest__work__title">
+        <h1>LATEST WORKS</h1>
+      </div>
+      <div class="latest__work__img">
+        <div class="work">
+          <figure>
+            <img src="images/flexbox.png" alt="" width="">
+            <figcaption>Esercizi con flexbox</figcaption>
+          </figure>
+        </div>
+        <div class="work">
+          <figure>
+            <img src="images/spotify.png" alt="" width="">
+            <figcaption>Prova replica sito Spotify</figcaption>
+          </figure>
+        </div>
+        <div class="work">
+          <figure>
+            <img src="images/form.png" alt="" width="">
+            <figcaption>Esercizi con i form</figcaption>
+          </figure>
+        </div>
+        <div class="work">
+          <figure>
+            <img src="images/dropdownmenu.png" alt="" width="">
+            <figcaption>Esercizi con i dropdown menu</figcaption>
+          </figure>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="contact__form__section"><a name="contact"></a>
+      <div class="contact__form__title">
+        <h1>CONTACT ME</h1>
+      </div>
+      <form action="" method="get" class="contact__form">
+        <div class="form__item">
+          <label for="full-name">Nome</label>
+          <input id="full-name" name="full-name" type="text" placeholder="Mario Rossi" required />
+        </div>
+        <div class="form__item">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="mariorossi@example.com" required />
+        </div>
+        <div class="form__item">
+          <label for="address">Indirizzo</label>
+          <input type="text" id="address" name="address" placeholder="Via Roma, 1 - Roma 00123" required></input>
+        </div>
+        <div class="form__item">
+          <label for="number">Cellulare</label>
+          <input type="tel" id="number" name="number" placeholder="123 0011223" required></input>
+        </div>
+        <div class="form__item">
+          <label for="message">Lascia un messaggio</label>
+          <textarea name="message" id="message" cols="30" rows="10">
+        </textarea>
+        </div>
+        <div class="form__item">
+          <button>Invia</button>
+        </div>
+      </form>
+
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__element">
-      <div class="footer__copy">&copy Andrea Selmi</div>
+      <div class="footer__text">&copy 2020 - Andrea Selmi</div>
+      <div class="footer__link"><a href="mailto:andreaselmi90@gmail.com">Email</a>
+        <span>||</span> <a href="#home">Torna su</a>
 
+      </div>
     </div>
 
 
