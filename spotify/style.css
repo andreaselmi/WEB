@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Patua One', cursive;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #509BF5;
+}
+
+.navbar {
+  display: flex;
+  padding: 18px;
+  width: 1150px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.fa-spotify,
+.logo__spotify {
+  color: white;
+}
+
+.logo__spotify {
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.fa-spotify {
+  font-size: 35px;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar__item {
+  padding-left: 45px;
+}
+
+.separe {
+  padding-right: 45px;
+  border-right: 1px solid white;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__link:link,
+.navbar__link:visited {
+  color: white;
+}
+
+.navbar__link:hover {
+  color: black;
+}
+
+.header__main {
+  height: 650px;
+  background-color: #509BF5;
+  display: flex;
+  justify-content: center;
+}
+
+.header__text {
+  width: 1150px;
+  color: white;
+}
+
+.header__title {
+  font-size: 85px;
+  font-family: 'Cabin', sans-serif;
+  letter-spacing: 2px;
+}
+
+.header__subtitle {
+  font-size: 30px;
+  font-family: 'Cabin', sans-serif;
+  letter-spacing: 1px;
+}
+
+.checkplane {
+  margin-top: 50px;
+  border-radius: 30px;
+  padding: 15px 55px;
+  border: none;
+  background-color: #2cbf53;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .1em;
+}
+
+.condition {
+  width: 600px;
+}
+
+.condition__text {
+  margin-top: 130px;
+  font-size: 11px;
+}
+
+.condition a:link,
+.condition a:visited {
+  color: white;
+}
+
+.checkplane:hover {
+  background-color: #36D760;
+  cursor: pointer;
+}
